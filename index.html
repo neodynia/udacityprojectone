@@ -7,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Ryan Boris: WebDev</title>
     <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="responsive.css">
+    <link rel="stylesheet" href="css/responsive.css">
     <!-- the below three lines are a fix to get HTML5 semantic elements working in old versions of Internet Explorer-->
     <!--[if lt IE 9]>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
@@ -17,82 +17,88 @@
 
 <body>
     <div class="grid-container">
-    <!--main header for cover page and subsequent pages added in the future-->
-    <header>
-        <h1 id="header">Ryan Boris</h1>
-        <h2 id="subheader">FrontEnd WebDev</h2>
-        <img src="images/logo.jpg" alt="logo" class="logo" height="100px" width="100px">
-    </header>
+        <!--main header for cover page and subsequent pages added in the future-->
+        <header>
+            <h1 id="header">Ryan Boris</h1>
+            <h2 id="subheader">FrontEnd WebDev</h2>
+            <img src="images/logo.jpg" alt="logo" class="logo" height="100px" width="100px">
+        </header>
 
 
-    <!--navigation bar - template - convert to Bootstrap-->
-    <nav>
-        <!--nav buttons-->
-        
-        <ul id="nav-list">
-            <li>
-                <a href="#">Home</a>
-            </li>
-            <li>
-                <a href="#">About</a>
-            </li>
-            <li>
-                <a href="#">Showcase</a>
-            </li>
-            <li>
-                <a href="#">Contact</a>
-            </li>
-        </ul>
-    </nav>
+        <!--navigation bar - template - convert to Bootstrap-->
+        <nav>
+            <!--nav buttons-->
 
-    <!--main body consists of two <section>s (about me and showcase of projects) and a random ,fun cover photo <div>-->
+            <ul id="nav-list">
+                <li>
+                    <a href="#">Home</a>
+                </li>
+                <li>
+                    <a href="#">About</a>
+                </li>
+                <li>
+                    <a href="#">Showcase</a>
+                </li>
+                <li>
+                    <a href="#">Contact</a>
+                </li>
+            </ul>
+        </nav>
 
-    <main>
-        <section class="about-me">
-            <h2 id="about-me-heading">A Brief "About Me"</h2>
-            <p id="about-me-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, omnis maxime. Accusamus reiciendis eaque aut ad, necessitatibus porro, neque repellat obcaecati labore iste dignissimos provident, rerum quam doloribus. Sit natus earum architecto quaerat necessitatibus facere. Velit perferendis consequuntur doloremque saepe magnam. Dolorum corrupti ad eius. Culpa tempore quod beatae non dignissimos cum vel aliquid suscipit, officia adipisci veritatis laborum tenetur.</p>
-        </section>
+        <!--main body consists of two <section>s (about me and showcase of projects) and a random ,fun cover photo <div>-->
 
-        <section class="project-showcase">
-            <h2>Selected Projects Portal</h2>
-            <article>
-                <h3>Udacity FEND Projects</h3>
-                <a href="#">
-                    <img src="#" alt="udacity frontend project thumbnail and link">
-                </a>
-            </article>
+        <main>
+            <section class="about-me">
+                <div class="bio">
+                    <h2 id="about-me-heading">A Brief "About Me"</h2>
+                    <p id="about-me-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, omnis maxime. Accusamus reiciendis eaque
+                        aut ad, necessitatibus porro, neque repellat obcaecati labore iste dignissimos provident, rerum quam
+                        doloribus. Sit natus earum architecto quaerat necessitatibus facere.</p>
+                </div>
+                <div class="biopic">
+                    <img src="images/colorfulbursts.jpeg" alt="about me graphic" class="biopicture">
+                </div>
+            </section>
 
-            <article>
-                <h3>Freecodecamp Projects</h3>
-                <a href="#">
-                    <img src="#" alt="freecodecamp projects thumbnail and link">
-                </a>
-            </article>
+            <section class="project-showcase">
+                <h2 id="projects-heading">Selected Projects Portal</h2>
+                <article class="udacity-projects">
+                    <h3 id="udacity-heading">Udacity FEND Projects</h3>
+                    <a href="#">
+                        <img src="images/code0.jpeg" alt="udacity frontend project thumbnail and link" class="pic0">
+                    </a>
+                </article>
 
-            <article>
-                <h3>Freelanced Projects</h3>
-                <a href="#">
-                    <img src="#" alt="freelanced projects thumbnail and link">
-                </a>
-            </article>
-        </section>
+                <article class="freecodecamp-projects">
+                    <h3 id="freecodecamp-heading">Freecodecamp Projects</h3>
+                    <a href="#">
+                        <img src="images/code1.jpeg" alt="freecodecamp projects thumbnail and link" class="pic1">
+                    </a>
+                </article>
 
-        <div class="cover-photo">
-            <img src="#" alt="artistic photo of myself">
-        </div>
+                <article class="freelance-projects">
+                    <h3 class="freelance-heading">Freelanced Projects</h3>
+                    <a href="#">
+                        <img src="images/code2.jpg" alt="freelanced projects thumbnail and link" class="pic2">
+                    </a>
+                </article>
+            </section>
 
-        <!--aside contains social network navigation and contact items-->
-        <aside>
-            <!--include buttons for email, telephone, github, facebook, stack overflow, instagram, snapchat, twitter and linkedin-->
-        </aside>
-    </main>
 
-    <!--footer used for all pages-->
-    <footer>
-        <p id="footer-text">Ryan Boris: Front End Web Developer, 2018.  All rights reserved.  Personal Portfolio Page</p>
-    </footer>
+            <!--aside contains social network navigation and contact items-->
+            <aside>
+                <!--include buttons for email, telephone, github, facebook, stack overflow, instagram, snapchat, twitter and linkedin-->
+            </aside>
+        </main>
 
-    </div><!--closing tag for grid-container--> 
+        <!--footer used for all pages-->
+        <footer>
+            <p id="footer-text">Ryan Boris: Front End Web Developer, 2018.</p>
+            <p>All rights reserved. Personal Portfolio Page</p>
+        </footer>
+
+    </div>
+    <!--closing tag for grid-container-->
 </body>
 
 </html>
