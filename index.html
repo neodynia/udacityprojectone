@@ -16,15 +16,17 @@
 
 
 <body>
+    <div class="grid-container">
     <!--main header for cover page and subsequent pages added in the future-->
     <header>
         <h1>Ryan Boris: Frontend WebDev</h1>
     </header>
 
-    <!--navigation bar includes both navigational list items/buttons and a search box functionality-->
+    <!--navigation bar - template - convert to Bootstrap-->
     <nav>
         <!--nav buttons-->
-        <ul>
+        
+        <ul id="nav-list">
             <li>
                 <a href="#">Home</a>
             </li>
@@ -38,13 +40,6 @@
                 <a href="#">Contact</a>
             </li>
         </ul>
-
-        <!--search form -->
-        <form>
-            <input type="search" name="q" placeholder="Search!">
-            <input type="submit" value="Go!">
-        </form>
-
     </nav>
 
     <!--main body consists of two <section>s (about me and showcase of projects) and a random ,fun cover photo <div>-->
@@ -91,8 +86,10 @@
 
     <!--footer used for all pages-->
     <footer>
-        <p>Ryan Boris: Front End Web Developer, 2018.</p>
+        <p id="footer-text">Ryan Boris: Front End Web Developer, 2018.  All rights reserved.  Personal Portfolio Page</p>
     </footer>
+
+    </div><!--closing tag for grid-container--> 
 </body>
 
 </html>

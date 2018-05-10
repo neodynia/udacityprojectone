@@ -1,0 +1,63 @@
+html, body {
+    padding: 0;
+    margin: 0;
+    max-width: 100%;
+}
+
+/*Grid Container*/
+.grid-container {
+    display: grid;
+    grid-template-columns: 10% 1fr;
+    grid-gap: 1em;
+  
+    
+}
+
+/*Grid Items and HTML5 Semantic Layout Selectors*/
+header {
+    grid-column: 2 / span 1;
+    grid-row: 1; 
+    
+}
+
+nav {
+
+    grid-column: 1 / span 2; 
+    grid-row: 2; 
+
+
+}
+
+main {
+    grid-column: 2 / span 1;
+    grid-row: 3;
+}
+
+footer {
+    grid-column: 1 / span 2;
+    grid-row: 4;
+
+}
+
+
+
+
+
+/*Header & Footer Text Styling Selectors*/
+
+
+
+#footer-text {
+    text-align: center;
+}
+
+
+/*nav bar stylings*/
+
+#nav-list {
+    display: flex;
+    padding: 10px;
+    justify-content: space-around;
+    list-style-type: none;
+}
+
