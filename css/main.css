@@ -1,56 +1,72 @@
-html, body {
+/*html and body stylings*/
+
+html,
+body {
     padding: 0;
     margin: 0;
     max-width: 100%;
 }
 
+/*align all headings and paragraph text*/
+
 /*Grid Container*/
+
 .grid-container {
     display: grid;
-    grid-template-columns: 10% 1fr;
     grid-gap: 1em;
-  
-    
 }
 
 /*Grid Items and HTML5 Semantic Layout Selectors*/
+
 header {
-    grid-column: 2 / span 1;
-    grid-row: 1; 
-    
+    grid-column: 1 / span 1;
+    grid-row: 1;
+    display: grid;
 }
 
 nav {
-
-    grid-column: 1 / span 2; 
-    grid-row: 2; 
-
-
+    grid-column: 1 / span 1;
+    grid-row: 2;
+    border-block-end: solid #000 5px;
+    border-block-start: solid #000 5px;
 }
 
 main {
-    grid-column: 2 / span 1;
-    grid-row: 3;
+    grid-column: 1 / span 1;
+    grid-row: 3 / span 6;
 }
 
 footer {
-    grid-column: 1 / span 2;
-    grid-row: 4;
-
+    grid-column: 1 / span 1;
+    grid-row: 9;
 }
 
+/*logo*/
 
-
-
-
-/*Header & Footer Text Styling Selectors*/
-
-
-
-#footer-text {
-    text-align: center;
+#header {
+    grid-column: 2 / span 1;
+    grid-row: 1;
+    display: flex;
+    align-self: center;
+    justify-self: flex-start;
+    line-height: 3em;
 }
 
+#subheader {
+    grid-column: 2 / span 1;
+    grid-row: 1;
+    display: flex;
+    align-self: flex-end;
+    justify-self: flex-start;
+}
+
+.logo {
+    grid-column: 1 / span 1;
+    grid-row: 1;
+    display: flex;
+    align-self: center;
+    justify-self: flex-end;
+}
 
 /*nav bar stylings*/
 
@@ -61,3 +77,8 @@ footer {
     list-style-type: none;
 }
 
+.project-showcase h2,
+h3,
+.about-me h2 {
+    text-align: center;
+}
