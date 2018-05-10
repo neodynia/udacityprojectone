@@ -1,39 +1,44 @@
 @import url('https://fonts.googleapis.com/css?family=Poiret+One');
-
-html, body, header, nav, main, article, section, aside, div, span, footer {
+html,
+body,
+header,
+nav,
+main,
+article,
+section,
+aside,
+div,
+span,
+footer {
     margin: 0;
-    padding: 0; 
+    padding: 0;
     max-width: 100%;
     background-color: #000;
     color: #fff;
-    }
-
+}
 
 .grid {
-    display: grid; 
+    display: grid;
     grid-template-columns: 20% 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr;
-    grid-gap: 3em;
-    align-content: space-between;
- 
+    grid-gap: 1em;
+    
+}
 
-}
 .logo-picture {
-    grid-row: 1; 
-    grid-column: 1; 
+    grid-row: 1;
+    grid-column: 1;
 }
+
 header {
     grid-row: 1;
     grid-column: 2;
-    
 }
 
 .header-text {
     display: flex;
     justify-content: flex-end;
     flex-flow: row wrap;
-
-
 }
 
 .header-text:first-child {
@@ -41,38 +46,58 @@ header {
     font-family: 'Poiret One', cursive;
 }
 
-
 .main-picture {
     grid-row: 2;
-    grid-column: 2; 
+    grid-column: 2;
 }
-
 
 main {
-    grid-row: 3; 
-    grid-column: span 2; 
+    grid-row: 3;
+    grid-column: 1;
 }
-
-.main-wrapper {
-    display: flex;
-    flex-direction: row;
-}
-
 .about-me {
-    flex: 1; 
-    order: 0;
-
+    display: flex;
+    flex-flow: row wrap;
+    
 }
 
-.portfolio-showcase {
-    flex: 1; 
+#about-me-header {
+    flex:1; 
+    order:0; 
+}
+
+#about-text {
+    flex: 1;
     order: 1; 
 }
 
+section {
+    grid-row: 3; 
+    grid-column: 2;
+}
+
+
+.portfolio-showcase {
+    display: flex;
+    flex-flow: column wrap;
+
+}
+
+#proj-2{
+    flex: 1; 
+    order: 2;
+}
+#proj-3{
+    flex: 1; 
+    order: 3;
+}#proj-4{
+    flex: 1; 
+    order: 4;
+}
 
 footer {
     grid-row: 4;
-    grid-column: span 2; 
+    grid-column: span 2;
 }
 
 .footer-text {
@@ -81,7 +106,7 @@ footer {
 }
 
 #footer-info {
-    flex: 1; 
+    flex: 1;
     order: 0;
 }
 
@@ -89,4 +114,3 @@ footer {
     flex: 1;
     order: 1;
 }
-
