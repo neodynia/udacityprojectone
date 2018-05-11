@@ -1,9 +1,10 @@
+@import url('https://fonts.googleapis.com/css?family=Skranji');
+/*Responsive Image Adjustment*/
+
 img {
     display: block;
     max-width: 100%;
-    max-height: auto; 
-    
-
+    max-height: auto;
 }
 
 /*Grid Container*/
@@ -26,13 +27,12 @@ nav {
     grid-row: 2;
     border-block-end: solid #000 5px;
     border-block-start: solid #000 5px;
-    
 }
 
 main {
     grid-column: 1 / span 1;
     grid-row: 3;
-    display: flex; 
+    display: flex;
     flex-flow: column wrap;
 }
 
@@ -45,7 +45,7 @@ footer {
     margin: 50px;
 }
 
-/*logo*/
+/*Grid Items - Header and Logo*/
 
 #header {
     grid-column: 2 / span 1;
@@ -54,6 +54,7 @@ footer {
     align-self: center;
     justify-self: flex-start;
     line-height: 3em;
+    font-family: 'Skranji', cursive;
 }
 
 #subheader {
@@ -62,6 +63,7 @@ footer {
     display: flex;
     align-self: flex-end;
     justify-self: flex-start;
+    font-family: 'Skranji', cursive;
 }
 
 .logo {
@@ -81,6 +83,8 @@ footer {
     list-style-type: none;
 }
 
+/*About Me and Showcase Stylings*/
+
 .about-me {
     margin-top: 20px;
     margin-bottom: 20px;
@@ -93,12 +97,19 @@ footer {
     padding: 10px;
 }
 
-h2, h3, p {
+/*Misc Headings, Text and Img Stylings*/
+
+h2,
+h3,
+p {
     text-align: center;
 }
 
-.pic0, .pic1, .pic2, .biopicture {
+.pic0,
+.pic1,
+.pic2,
+.biopicture {
     margin-left: auto;
-    margin-right: auto; 
+    margin-right: auto;
     max-width: 50%;
 }
