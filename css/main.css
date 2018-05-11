@@ -19,7 +19,9 @@ img {
 header {
     grid-column: 1 / span 1;
     grid-row: 1;
-    display: grid;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
 }
 
 nav {
@@ -48,28 +50,20 @@ footer {
 /*Grid Items - Header and Logo*/
 
 #header {
-    grid-column: 2 / span 1;
-    grid-row: 1;
-    display: flex;
-    align-self: center;
-    line-height: 3em;
+    flex: 1;
+    order: 0;
     font-family: 'Skranji', cursive;
 }
 
 #subheader {
-    grid-column: 2 / span 1;
-    grid-row: 1;
-    display: flex;
-    align-self: flex-end;
+    flex: 1;
+    order: 2;
     font-family: 'Skranji', cursive;
 }
 
 .logo {
-    grid-column: 1 / span 1;
-    grid-row: 1;
-    display: flex;
-    align-self: center;
-    
+    flex: 1;
+    order: 1;
 }
 
 /*nav bar stylings*/
