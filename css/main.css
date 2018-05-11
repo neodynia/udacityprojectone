@@ -1,17 +1,10 @@
-/*html and body stylings*/
-
-html,
-body,
-    {
-    padding: 0;
-    margin: 0;
-}
-
 img {
+    display: block;
     max-width: 100%;
-}
+    max-height: auto; 
+    
 
-/*align all headings and paragraph text*/
+}
 
 /*Grid Container*/
 
@@ -33,16 +26,23 @@ nav {
     grid-row: 2;
     border-block-end: solid #000 5px;
     border-block-start: solid #000 5px;
+    
 }
 
 main {
     grid-column: 1 / span 1;
     grid-row: 3;
+    display: flex; 
+    flex-flow: column wrap;
 }
 
 footer {
     grid-column: 1 / span 1;
     grid-row: 4;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    margin: 50px;
 }
 
 /*logo*/
@@ -81,38 +81,24 @@ footer {
     list-style-type: none;
 }
 
-.project-showcase article {
-    padding: 1em;
+.about-me {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 10px;
 }
 
-.project-showcase h2,
-h3,
-.about-me h2,
-p {
+.project-showcase {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 10px;
+}
+
+h2, h3, p {
     text-align: center;
 }
 
-.about-me {
-    display: grid;
-    grid-gap: 1em;
-}
-
-.bio {
-    grid-column: 1 / span 1;
-    grid-row: 2;
-}
-
-.biopic {
-    grid-column: 1 / span 1;
-    grid-row: 1;
-    align-self: center;
-}
-
-.pic0,
-.pic1,
-.pic2 {
-    display: block;
+.pic0, .pic1, .pic2, .biopicture {
     margin-left: auto;
-    margin-right: auto;
-    width: 50%;
+    margin-right: auto; 
+    max-width: 50%;
 }
