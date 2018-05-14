@@ -27,8 +27,7 @@ header {
 nav {
     grid-column: 1 / span 1;
     grid-row: 2;
-    border-top: solid #000 5px;
-    border-bottom: solid #000 5px;
+   
 }
 
 main {
@@ -74,6 +73,10 @@ ul {
     padding: 0;
     overflow: hidden;
     background-color: #333;
+    border: 2px 0; 
+    border-style: dotted; 
+    border-color: #fff;
+    border-radius: 20px;
 }
 
 li {
@@ -89,11 +92,11 @@ li a {
 }
 
 a:hover:not(.active) {
-    background-color: #A34;
+    background-color: #c3d;
 }
 
 .active {
-background-color:#A34;
+background-color: #000;
 }
 
 /*About Me and Showcase Stylings*/
